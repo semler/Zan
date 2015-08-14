@@ -1,0 +1,37 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "Config.h"
+    #import "UIViewAdditions.h"
+    #import "AppManager.h"
+    #import "GFUtils.h"
+    #import "CalendarUtils.h"
+    #import "DateUtils.h"
+    #import "LogUtils.h"
+    #import "ShareUtils.h"
+    #import "TaskUtils.h"
+    #import "UIImage+Retina4.h"
+    #import "UIImage+Theme.h"
+    #import "NSDate+Format.h"
+    #import "NSString+Date.h"
+    #import "NSString+Size.h"
+    #import "NSDateComponents+Category.h"
+    #import "GAI.h"
+    #import "GAIFields.h"
+    #import "GAIDictionaryBuilder.h"
+    #import <AFNetworking/AFNetworking.h>
+    #import <MBProgressHUD/MBProgressHUD.h>
+    #import <Mantle/Mantle.h>
+#endif

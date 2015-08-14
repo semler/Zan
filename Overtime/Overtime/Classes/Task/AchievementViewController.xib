@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AchievementViewController">
+            <connections>
+                <outlet property="animImageView1" destination="TXY-sD-LBK" id="STJ-Jh-KNR"/>
+                <outlet property="animImageView2" destination="btl-Ve-BG7" id="Myf-cF-THL"/>
+                <outlet property="animTopConstraint1" destination="yRf-Pc-bVF" id="XJB-lI-iST"/>
+                <outlet property="animTopConstraint2" destination="q1X-6m-EKe" id="fBJ-ZQ-Ksh"/>
+                <outlet property="congratulationBottomConstraint" destination="mVG-Ac-Xfv" id="27d-na-olg"/>
+                <outlet property="dateLabel" destination="hWN-zn-V2x" id="ngF-h1-Tpn"/>
+                <outlet property="daysLabel" destination="hi3-bi-V8U" id="mSm-YR-Xd7"/>
+                <outlet property="daysView" destination="WuV-Xf-gmz" id="ljd-Et-ZRu"/>
+                <outlet property="titleLabel" destination="9JG-li-mfR" id="yv9-bA-TlA"/>
+                <outlet property="titleTopConstraint" destination="XTm-Nc-Ff3" id="WMf-qF-5TB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="achievement_bg" translatesAutoresizingMaskIntoConstraints="NO" id="has-hj-F6a">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="achieve_anim2" translatesAutoresizingMaskIntoConstraints="NO" id="btl-Ve-BG7">
+                    <rect key="frame" x="0.0" y="85" width="320" height="369"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sAh-cN-77g">
+                    <rect key="frame" x="18" y="155" width="285" height="217"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="congratulation_bg" translatesAutoresizingMaskIntoConstraints="NO" id="wdD-A8-4r2">
+                            <rect key="frame" x="0.0" y="0.0" width="285" height="217"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WuV-Xf-gmz" customClass="DaysView">
+                            <rect key="frame" x="80" y="80" width="76" height="55"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="4zR-js-Uho"/>
+                                <constraint firstAttribute="width" constant="76" id="HF9-Ig-r9u"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="WuV-Xf-gmz" firstAttribute="top" secondItem="sAh-cN-77g" secondAttribute="top" constant="80" id="7MX-qq-Q66"/>
+                        <constraint firstItem="wdD-A8-4r2" firstAttribute="leading" secondItem="sAh-cN-77g" secondAttribute="leading" id="LBU-pZ-TQC"/>
+                        <constraint firstAttribute="width" constant="285" id="XBl-au-Ty9"/>
+                        <constraint firstAttribute="height" constant="217" id="Xci-lA-RkM"/>
+                        <constraint firstItem="WuV-Xf-gmz" firstAttribute="leading" secondItem="sAh-cN-77g" secondAttribute="leading" constant="80" id="gP9-r2-60a"/>
+                        <constraint firstAttribute="trailing" secondItem="wdD-A8-4r2" secondAttribute="trailing" id="mU6-rc-BGd"/>
+                        <constraint firstItem="wdD-A8-4r2" firstAttribute="top" secondItem="sAh-cN-77g" secondAttribute="top" id="pTQ-OE-aPJ"/>
+                        <constraint firstAttribute="bottom" secondItem="wdD-A8-4r2" secondAttribute="bottom" id="pfq-Fj-omA"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="achieve_anim1" translatesAutoresizingMaskIntoConstraints="NO" id="TXY-sD-LBK">
+                    <rect key="frame" x="0.0" y="85" width="320" height="369"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="done_title" translatesAutoresizingMaskIntoConstraints="NO" id="A7e-Ik-LCk">
+                    <rect key="frame" x="54" y="58" width="213" height="80"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59H-NS-UQS">
+                    <rect key="frame" x="18" y="392" width="284" height="156"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="achieve_content_bg" translatesAutoresizingMaskIntoConstraints="NO" id="0A8-PF-mWn">
+                            <rect key="frame" x="0.0" y="0.0" width="284" height="156"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezZ-Nx-9RW">
+                            <rect key="frame" x="3" y="113" width="279" height="40"/>
+                            <state key="normal" image="achieve_close2">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="closeButtonDidClicked:" destination="-1" eventType="touchUpInside" id="cu2-fK-RbI"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="※詳しくは、記録期間の拡張ページをご覧ください。" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vob-rq-2zd">
+                            <rect key="frame" x="20" y="88" width="244" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="TdK-pD-6cx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="achieve_item" translatesAutoresizingMaskIntoConstraints="NO" id="uuz-aS-Dq4">
+                            <rect key="frame" x="20" y="17" width="51" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="51" id="Ixp-Sy-8tr"/>
+                                <constraint firstAttribute="height" constant="15" id="hU0-Hm-LRr"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="achieve_date" translatesAutoresizingMaskIntoConstraints="NO" id="Qwe-26-egC">
+                            <rect key="frame" x="20" y="67" width="51" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="51" id="SyG-oa-Jdy"/>
+                                <constraint firstAttribute="height" constant="15" id="UEC-Ig-RGG"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="achieve_days" translatesAutoresizingMaskIntoConstraints="NO" id="Mfw-1F-cwc">
+                            <rect key="frame" x="20" y="42" width="51" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="Qr6-8H-pJV"/>
+                                <constraint firstAttribute="width" constant="51" id="iOE-GY-Rcu"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+20日間" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hi3-bi-V8U">
+                            <rect key="frame" x="79" y="42" width="185" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+20日間" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWN-zn-V2x">
+                            <rect key="frame" x="79" y="67" width="185" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="※詳しくは、記録期間の拡張" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="185" translatesAutoresizingMaskIntoConstraints="NO" id="9JG-li-mfR">
+                            <rect key="frame" x="79" y="17" width="185" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="lbb-c2-uwJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Vob-rq-2zd" secondAttribute="trailing" constant="20" id="3Vq-wd-YmF"/>
+                        <constraint firstItem="Mfw-1F-cwc" firstAttribute="leading" secondItem="59H-NS-UQS" secondAttribute="leading" constant="20" id="3qZ-He-xWc"/>
+                        <constraint firstAttribute="trailing" secondItem="ezZ-Nx-9RW" secondAttribute="trailing" constant="2" id="8y5-0J-df2"/>
+                        <constraint firstItem="0A8-PF-mWn" firstAttribute="top" secondItem="59H-NS-UQS" secondAttribute="top" id="Fuk-98-ffS"/>
+                        <constraint firstAttribute="bottom" secondItem="0A8-PF-mWn" secondAttribute="bottom" id="HHx-Kr-haD"/>
+                        <constraint firstItem="ezZ-Nx-9RW" firstAttribute="leading" secondItem="59H-NS-UQS" secondAttribute="leading" constant="3" id="Hh6-bd-OBb"/>
+                        <constraint firstAttribute="trailing" secondItem="0A8-PF-mWn" secondAttribute="trailing" id="JRN-Sy-XTi"/>
+                        <constraint firstItem="9JG-li-mfR" firstAttribute="top" secondItem="uuz-aS-Dq4" secondAttribute="top" id="JXb-tQ-KPB"/>
+                        <constraint firstItem="Qwe-26-egC" firstAttribute="top" secondItem="Mfw-1F-cwc" secondAttribute="bottom" constant="10" id="Jtz-fb-Mjh"/>
+                        <constraint firstItem="ezZ-Nx-9RW" firstAttribute="top" secondItem="Vob-rq-2zd" secondAttribute="bottom" constant="10" id="MMh-KR-9Ms"/>
+                        <constraint firstItem="Qwe-26-egC" firstAttribute="leading" secondItem="59H-NS-UQS" secondAttribute="leading" constant="20" id="NZU-gE-WsB"/>
+                        <constraint firstAttribute="width" constant="284" id="ShU-TT-Rzt"/>
+                        <constraint firstItem="Mfw-1F-cwc" firstAttribute="top" secondItem="uuz-aS-Dq4" secondAttribute="bottom" constant="10" id="Sui-kP-8Af"/>
+                        <constraint firstItem="uuz-aS-Dq4" firstAttribute="leading" secondItem="59H-NS-UQS" secondAttribute="leading" constant="20" id="TLN-DZ-EMh"/>
+                        <constraint firstItem="hWN-zn-V2x" firstAttribute="leading" secondItem="Qwe-26-egC" secondAttribute="trailing" constant="8" id="V4a-yV-Mw5"/>
+                        <constraint firstItem="9JG-li-mfR" firstAttribute="leading" secondItem="uuz-aS-Dq4" secondAttribute="trailing" constant="8" id="Xvj-bu-ljO"/>
+                        <constraint firstAttribute="bottom" secondItem="ezZ-Nx-9RW" secondAttribute="bottom" constant="3" id="YTE-ms-mQL"/>
+                        <constraint firstAttribute="trailing" secondItem="hi3-bi-V8U" secondAttribute="trailing" constant="20" id="ZJm-Mp-fD8"/>
+                        <constraint firstItem="0A8-PF-mWn" firstAttribute="leading" secondItem="59H-NS-UQS" secondAttribute="leading" id="aZw-Gh-Qkw"/>
+                        <constraint firstAttribute="trailing" secondItem="hWN-zn-V2x" secondAttribute="trailing" constant="20" id="bja-7j-Cn6"/>
+                        <constraint firstItem="Qwe-26-egC" firstAttribute="top" secondItem="hWN-zn-V2x" secondAttribute="top" id="eRg-v3-fEH"/>
+                        <constraint firstItem="uuz-aS-Dq4" firstAttribute="top" secondItem="59H-NS-UQS" secondAttribute="top" constant="17" id="fox-0l-Nj7"/>
+                        <constraint firstItem="Vob-rq-2zd" firstAttribute="leading" secondItem="59H-NS-UQS" secondAttribute="leading" constant="20" id="giU-Ai-taI"/>
+                        <constraint firstItem="Mfw-1F-cwc" firstAttribute="top" secondItem="hi3-bi-V8U" secondAttribute="top" id="obv-He-Uwk"/>
+                        <constraint firstAttribute="trailing" secondItem="9JG-li-mfR" secondAttribute="trailing" constant="20" id="rWI-eh-jfA"/>
+                        <constraint firstAttribute="height" constant="156" id="tdm-12-sUj"/>
+                        <constraint firstItem="hi3-bi-V8U" firstAttribute="leading" secondItem="Mfw-1F-cwc" secondAttribute="trailing" constant="8" id="udd-7k-Ass"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUp-Fj-YkR">
+                    <rect key="frame" x="275" y="33" width="35" height="34"/>
+                    <state key="normal" image="achieve_close1">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="closeButtonDidClicked:" destination="-1" eventType="touchUpInside" id="GOE-H6-Zgj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cUp-Fj-YkR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="33" id="2NE-OT-9bd"/>
+                <constraint firstAttribute="trailing" secondItem="cUp-Fj-YkR" secondAttribute="trailing" constant="10" id="2NN-yb-2b6"/>
+                <constraint firstAttribute="centerX" secondItem="A7e-Ik-LCk" secondAttribute="centerX" id="FQ4-go-bkv"/>
+                <constraint firstAttribute="centerX" secondItem="sAh-cN-77g" secondAttribute="centerX" id="HMt-Lb-8Fg"/>
+                <constraint firstAttribute="centerX" secondItem="btl-Ve-BG7" secondAttribute="centerX" id="RIv-pZ-BEi"/>
+                <constraint firstAttribute="bottom" secondItem="has-hj-F6a" secondAttribute="bottom" id="W3L-qU-4Zs"/>
+                <constraint firstItem="A7e-Ik-LCk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="58" id="XTm-Nc-Ff3"/>
+                <constraint firstAttribute="trailing" secondItem="has-hj-F6a" secondAttribute="trailing" id="ZN0-RY-ddK"/>
+                <constraint firstItem="has-hj-F6a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bcR-O5-h8g"/>
+                <constraint firstAttribute="centerX" secondItem="TXY-sD-LBK" secondAttribute="centerX" id="dAC-2s-6p2"/>
+                <constraint firstAttribute="bottom" secondItem="59H-NS-UQS" secondAttribute="bottom" constant="20" id="fbO-Rd-Epa"/>
+                <constraint firstItem="59H-NS-UQS" firstAttribute="top" secondItem="sAh-cN-77g" secondAttribute="bottom" constant="20" id="mVG-Ac-Xfv"/>
+                <constraint firstItem="has-hj-F6a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pm8-zl-Qee"/>
+                <constraint firstItem="btl-Ve-BG7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="85" id="q1X-6m-EKe"/>
+                <constraint firstAttribute="centerX" secondItem="59H-NS-UQS" secondAttribute="centerX" id="w0b-fQ-mYn"/>
+                <constraint firstItem="TXY-sD-LBK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="85" id="yRf-Pc-bVF"/>
+            </constraints>
+            <point key="canvasLocation" x="295" y="405"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="achieve_anim1" width="320" height="369"/>
+        <image name="achieve_anim2" width="320" height="369"/>
+        <image name="achieve_close1" width="35" height="34"/>
+        <image name="achieve_close2" width="279" height="40"/>
+        <image name="achieve_content_bg" width="284" height="156"/>
+        <image name="achieve_date" width="51" height="15"/>
+        <image name="achieve_days" width="51" height="15"/>
+        <image name="achieve_item" width="51" height="15"/>
+        <image name="achievement_bg" width="320" height="568"/>
+        <image name="congratulation_bg" width="285" height="217"/>
+        <image name="done_title" width="213" height="80"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

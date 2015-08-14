@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <dict>
+        <key>MSGWorkStart</key>
+        <string>秘書：ご出勤ですね。本日もよろしくお願いいたします。</string>
+        <key>MSGWorkEnd</key>
+        <string>秘書：本日もお疲れ様です。退勤時刻に修正がおありの場合には、お早目にご確認ください。</string>
+        <key>MSGOTStart</key>
+        <string>秘書：残業時間に移行しました。ご無理の無いようにお願いいたします。</string>
+        <key>MSGOTEnd</key>
+        <string>秘書：残業お疲れ様でした。心身のケアをなさって、また元気にお会いしましょう。</string>
+        <key>MSGChargeReach</key>
+        <string>秘書：%@月の残業代は%d万円を超えました。 これからもワークライフバランスにはご留意ください。</string>
+        <key>MSGLastConfirm</key>
+        <string>秘書：昨日の出勤・退勤時刻の修正はございませんか？（時刻が違う時は手動で修正ください。）</string>
+        <key>MSGMemoryWarning</key>
+        <string>秘書：メモリが不足しております。他のアプリのプロセスを終了させてください。残業代計測が停止する場合があります。</string>
+        <key>MSGAppTerminate</key>
+        <string>秘書：残業代計測が停止しました。タップしてアプリを再開してください。</string>
+    </dict>
+	<dict>
+		<key>MSGWorkStart</key>
+		<string>オペレーター：現場に到着を確認。本日のミッション開始！</string>
+		<key>MSGWorkEnd</key>
+		<string>オペレーター：ミッション成功！速やかに帰投せよ！</string>
+		<key>MSGOTStart</key>
+		<string>オペレーター：作戦変更！残業を開始する！総員直ちに残業開始せよ！</string>
+		<key>MSGOTEnd</key>
+		<string>オペレーター：ミッション完了！部隊の半数を失った模様、ヘリで緊急脱出せよ！</string>
+		<key>MSGChargeReach</key>
+		<string>オペレーター：%@月の報酬は%d万円を超えました。 あなたが戦場を生き抜いた証ですね！</string>
+		<key>MSGLastConfirm</key>
+		<string>オペレーター：昨日の作戦報告をせよ。（時刻が違う時は手動で修正してください。）</string>
+		<key>MSGMemoryWarning</key>
+		<string>オペレーター：メモリが不足しています。他のアプリのプロセスを終了させてください。残業代計測がストップしてしまいます。</string>
+		<key>MSGAppTerminate</key>
+		<string>オペレーター：残業代計測がストップしました。タップしてアプリを再開してください。</string>
+	</dict>
+	<dict>
+		<key>MSGWorkStart</key>
+		<string>王様：勇者よ、今こそ冒険（業務）を開始するのじゃ！</string>
+		<key>MSGWorkEnd</key>
+		<string>王様：よくやった！今日は宿屋で休むがよい。</string>
+		<key>MSGOTStart</key>
+		<string>王様：残業の森に迷い込んだか、さくせんは、いのちたいせつにじゃ！</string>
+		<key>MSGOTEnd</key>
+		<string>王様：よくぞ困難を乗り越えたぞよ！世界の半分を・・・やれなんですまんの。</string>
+		<key>MSGChargeReach</key>
+		<string>王様：%@月の報酬は%d万円を超えたところじゃ。これからも世界の平和はおぬしにかかっておるのじゃ！</string>
+		<key>MSGLastConfirm</key>
+		<string>王様：昨日の冒険を記録するんじゃ。（時刻が違う時は手動で修正するんじゃ。）</string>
+		<key>MSGMemoryWarning</key>
+		<string>王様：メモリが不足しておるようじゃ。他のアプリのプロセスを終了させるのじゃ。残業代計測がストップしてしまうぞよ。</string>
+		<key>MSGAppTerminate</key>
+		<string>王様：残業代計測がストップしたぞよ。タップしてアプリを再開するのじゃ。</string>
+	</dict>
+	<dict>
+		<key>MSGWorkStart</key>
+		<string>妹：今日もおしごとガンバって！おにいちゃんっ！</string>
+		<key>MSGWorkEnd</key>
+		<string>妹：おにいちゃん、今日もおしごとおつかれさま！はやく帰ってきてねっ！</string>
+		<key>MSGOTStart</key>
+		<string>妹：えー！今日残業なの！？むー！でも、がんばってるおにいちゃんを応援してるよっ！</string>
+		<key>MSGOTEnd</key>
+		<string>妹：ふわぁぁ・・・おしごと終わった？ね、寝てないよっ！ずっと待ってたんだからねっ！</string>
+		<key>MSGChargeReach</key>
+		<string>妹：すごいよ！おにいちゃん！%@月の残業代は%d万円超えだっ て！ねぇねぇ、いつも応援してたごほうびよろしくねっ！</string>
+		<key>MSGLastConfirm</key>
+		<string>妹：昨日の残業の記録をしてねっ。（時刻が違う時は手動で修正するんだよ。）</string>
+		<key>MSGMemoryWarning</key>
+		<string>妹：メモリが不足してるの。他のアプリのプロセスを終了させてね。残業代計測がストップしちゃうんだからねっ。</string>
+		<key>MSGAppTerminate</key>
+		<string>妹：残業代計測が止まっちゃった！タップしてアプリを再開してねっ！</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController">
+            <connections>
+                <outlet property="blockView" destination="4uH-TS-nlw" id="MK4-Pw-ckM"/>
+                <outlet property="dateLabel" destination="Ouq-sB-hY2" id="Fba-MW-Awp"/>
+                <outlet property="nextButton" destination="iHf-RP-9aT" id="IRx-yu-OCk"/>
+                <outlet property="previousButton" destination="hnq-u1-HNU" id="Grl-Cf-vh7"/>
+                <outlet property="tableView" destination="Pti-LN-PB5" id="obi-1O-c00"/>
+                <outlet property="view" destination="rds-0n-Xjd" id="ya7-Dr-ndq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="rds-0n-Xjd" customClass="DetailView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2_568h" translatesAutoresizingMaskIntoConstraints="NO" id="dv2-a9-wEP">
+                    <rect key="frame" x="0.0" y="168" width="320" height="400"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chart_ym_bg" translatesAutoresizingMaskIntoConstraints="NO" id="cag-Yl-d4l">
+                    <rect key="frame" x="0.0" y="183" width="320" height="64"/>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgtop_blue" translatesAutoresizingMaskIntoConstraints="NO" id="0si-76-3vt">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="193"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="45" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Pti-LN-PB5">
+                    <rect key="frame" x="0.0" y="244" width="320" height="272"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Rhk-IJ-idM"/>
+                        <outlet property="delegate" destination="-1" id="aFP-tO-dJg"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnq-u1-HNU">
+                    <rect key="frame" x="63" y="197" width="37" height="37"/>
+                    <state key="normal" image="chart_left">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="previousButtonDidClicked:" destination="-1" eventType="touchUpInside" id="JKZ-cg-lol"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2014年03月" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ouq-sB-hY2">
+                    <rect key="frame" x="48" y="198" width="225" height="35"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHf-RP-9aT">
+                    <rect key="frame" x="223" y="197" width="37" height="37"/>
+                    <state key="normal" image="chart_right">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nextButtonDidClicked:" destination="-1" eventType="touchUpInside" id="q1R-Es-waM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Pti-LN-PB5" firstAttribute="leading" secondItem="rds-0n-Xjd" secondAttribute="leading" id="0ei-4s-kRA"/>
+                <constraint firstAttribute="trailing" secondItem="dv2-a9-wEP" secondAttribute="trailing" id="1AE-GC-frI"/>
+                <constraint firstItem="dv2-a9-wEP" firstAttribute="top" secondItem="rds-0n-Xjd" secondAttribute="top" constant="168" id="4HA-gB-675"/>
+                <constraint firstAttribute="trailing" secondItem="Pti-LN-PB5" secondAttribute="trailing" id="Abc-rV-Ecq"/>
+                <constraint firstAttribute="bottom" secondItem="dv2-a9-wEP" secondAttribute="bottom" id="ftf-JQ-Jr3"/>
+                <constraint firstAttribute="bottom" secondItem="Pti-LN-PB5" secondAttribute="bottom" constant="52" id="mat-pj-7gh"/>
+                <constraint firstItem="dv2-a9-wEP" firstAttribute="leading" secondItem="rds-0n-Xjd" secondAttribute="leading" id="q9Z-S0-ihd"/>
+                <constraint firstItem="Pti-LN-PB5" firstAttribute="top" secondItem="rds-0n-Xjd" secondAttribute="top" constant="244" id="z69-GW-LIb"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="4uH-TS-nlw">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="log_block" translatesAutoresizingMaskIntoConstraints="NO" id="Vea-JG-Xc3">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="記録上限に達してしまいました…。 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3d-0Y-oSC">
+                    <rect key="frame" x="0.0" y="104" width="320" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="拡張しますか？  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAt-Gp-ZTy">
+                    <rect key="frame" x="0.0" y="119" width="320" height="17"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yaf-wK-m92">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="55"/>
+                    <state key="normal" image="icon_rock">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="blockButtonDidClicked:" destination="-1" eventType="touchUpInside" id="Cez-1J-YPF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Vea-JG-Xc3" firstAttribute="top" secondItem="4uH-TS-nlw" secondAttribute="top" id="0ke-jS-YId"/>
+                <constraint firstAttribute="trailing" secondItem="Yaf-wK-m92" secondAttribute="trailing" id="36c-4m-48w"/>
+                <constraint firstAttribute="bottom" secondItem="uAt-Gp-ZTy" secondAttribute="bottom" constant="20" id="4wh-aL-gzq"/>
+                <constraint firstItem="L3d-0Y-oSC" firstAttribute="top" secondItem="4uH-TS-nlw" secondAttribute="top" constant="104" id="5OR-hH-3Av"/>
+                <constraint firstAttribute="trailing" secondItem="L3d-0Y-oSC" secondAttribute="trailing" id="Cp5-fQ-ivj"/>
+                <constraint firstItem="Vea-JG-Xc3" firstAttribute="leading" secondItem="4uH-TS-nlw" secondAttribute="leading" id="Df5-Xj-4Cw"/>
+                <constraint firstItem="uAt-Gp-ZTy" firstAttribute="leading" secondItem="4uH-TS-nlw" secondAttribute="leading" id="MA8-1M-Jqj"/>
+                <constraint firstItem="uAt-Gp-ZTy" firstAttribute="top" secondItem="L3d-0Y-oSC" secondAttribute="bottom" id="Wmr-JR-pCA"/>
+                <constraint firstItem="Yaf-wK-m92" firstAttribute="leading" secondItem="4uH-TS-nlw" secondAttribute="leading" id="ZVv-5T-TNZ"/>
+                <constraint firstAttribute="trailing" secondItem="Vea-JG-Xc3" secondAttribute="trailing" id="Zum-5H-3hb"/>
+                <constraint firstAttribute="bottom" secondItem="Vea-JG-Xc3" secondAttribute="bottom" id="d4W-7X-NCz"/>
+                <constraint firstItem="Yaf-wK-m92" firstAttribute="top" secondItem="4uH-TS-nlw" secondAttribute="top" id="ddT-xt-GXX"/>
+                <constraint firstAttribute="trailing" secondItem="uAt-Gp-ZTy" secondAttribute="trailing" id="rqy-bi-Uos"/>
+                <constraint firstAttribute="bottom" secondItem="Yaf-wK-m92" secondAttribute="bottom" id="vX2-vc-kBq"/>
+                <constraint firstItem="L3d-0Y-oSC" firstAttribute="leading" secondItem="4uH-TS-nlw" secondAttribute="leading" id="x55-V7-gsg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="716" y="300.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg2_568h" width="320" height="400"/>
+        <image name="bgtop_blue" width="320" height="193"/>
+        <image name="chart_left" width="37" height="37"/>
+        <image name="chart_right" width="37" height="37"/>
+        <image name="chart_ym_bg" width="320" height="64"/>
+        <image name="icon_rock" width="63" height="63"/>
+        <image name="log_block" width="320" height="156"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

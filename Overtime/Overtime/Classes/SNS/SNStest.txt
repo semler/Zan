@@ -1,0 +1,92 @@
+{
+"mine" : {
+"edited" : "1",
+"company_name" : "Bravesoft",
+"company_id" : "1",
+"message" : "hello everyone!",
+"like_num" : "0",
+"sex" : "1",
+"message_last_updated" : "2015-02-04 17:13"
+},
+"friends" : [
+{
+"company_name" : "明るくアットホームな会社のデザイナー",
+"is_like" : "0",
+"company_id" : "0",
+"level" : "0",
+"message" : "こんにちわ",
+"user_id" : "8",
+"like_num" : "0",
+"sex" : "1",
+"message_last_updated" : "2015-02-04 17:14"
+},
+{
+"company_name" : "MicroSoft",
+"is_like" : "0",
+"company_id" : "0",
+"level" : "0",
+"message" : "お疲れ様です",
+"user_id" : "7",
+"like_num" : "0",
+"sex" : "1",
+"message_last_updated" : "2015-02-04 17:14"
+},
+{
+"company_name" : "Company Name",
+"is_like" : "0",
+"company_id" : "0",
+"level" : "0",
+"message" : "おやすみなさい",
+"user_id" : "5",
+"like_num" : "0",
+"sex" : "2",
+"message_last_updated" : "2015-02-04 12:08"
+},
+{
+"company_name" : "世の中を騒がせている会社",
+"is_like" : "0",
+"company_id" : "0",
+"level" : "0",
+"message" : "こんばは",
+"user_id" : "4",
+"like_num" : "0",
+"sex" : "1",
+"message_last_updated" : "2015-02-03 23:07"
+},
+{
+"company_name" : "今話題な会社",
+"is_like" : "0",
+"company_id" : "0",
+"level" : "0",
+"message" : "田中です",
+"user_id" : "3",
+"like_num" : "0",
+"sex" : "2",
+"message_last_updated" : "2015-02-03 15:43"
+},
+{
+"company_name" : "SoftBank",
+"is_like" : "0",
+"company_id" : "2",
+"level" : "1",
+"message" : "hi user100",
+"user_id" : "2",
+"like_num" : "0",
+"sex" : "1",
+"message_last_updated" : "2015-02-02 15:08"
+},
+{
+"company_name" : "売れてるゲーム会社",
+"is_like" : "0",
+"company_id" : "5",
+"level" : "0",
+"message" : "hi user",
+"user_id" : "1",
+"like_num" : "0",
+"sex" : "2",
+"message_last_updated" : "2015-02-02 15:06"
+}
+],
+"error" : "200",
+"error_message" : "OK"
+}
